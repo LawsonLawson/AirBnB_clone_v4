@@ -40,7 +40,7 @@ def hbnb():
     cache_id = uuid4()
     template_name = '1-hbnb.html'
     if not path.exists(path.join('templates', template_name)):
-        template_name = '8-hbnb.html'
+        template_name = '1-hbnb.html'
 
     return render_template(template_name,
                            states=st_ct,
