@@ -3,9 +3,25 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
+    position: relative; /* Ensure header is the reference for absolute positioning */
 }
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
     height: 100%;
+}
+
+header #api_status {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    transform: translateY(-50%);
+}
+
+.available {
+	background-color: #ff545f;
 }
