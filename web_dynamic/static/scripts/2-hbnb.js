@@ -19,7 +19,10 @@ $(document).ready(function () {
     }
   });
 
-  $.get('http://localhost:5001/api/v1/status', (data, status) => {
+  $.get('http://localhost:5001/api/v1/status', function(data, status) {
+    console.log("GET Request Status:", status);
+    console.log("GET Request Data:", data);
+
     if (status === 'success') {
       if (data.status === 'OK') {
         $('#api_status').addClass('available');
