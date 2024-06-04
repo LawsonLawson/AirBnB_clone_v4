@@ -5,6 +5,7 @@ header {
     border-bottom: 1px solid #CCCCCC;
     position: relative; /* Ensure header is the reference for absolute positioning */
 }
+
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
@@ -23,5 +24,5 @@ header #api_status {
 }
 
 .available {
-	background-color: #ff545f;
+	background-color: #ff545f !important;
 }
